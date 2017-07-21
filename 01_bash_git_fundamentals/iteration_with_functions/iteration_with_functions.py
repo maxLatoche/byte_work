@@ -3,6 +3,7 @@ import math
 def probability(iter_this):
 	#sort array
 	iter_this.sort()
+	print(iter_this)
 	
 	#check if array is odd or even
 	#calculate median
@@ -20,16 +21,22 @@ def probability(iter_this):
 	print(avg)
 
 	#find most common number
-	checklist = []
-	j = iter_this[0]
-	for k in range(len(iter_this)+1):
-		for val in iter_this:
-			if val == j:
-				checklist[k].append(j)
-			elif val > j:
-				j = val
+	#create empty dict
+	counter = {}
+	for j in iter_this:
+		if j in counter:
+			#dict count goes up for each time value is encountered
+			counter[j] += 1
+		else:
+			#each value in array becomes key
+			counter[j] = 1
 
-
+	most_common = 0
+	#iterate through counter to find largest value
+	for k in counter:
+		if counter[k] > most_common:
+			most_common = k
+	print(most_common)
 
 some_list = [2, 34, 12, 29, 38, 1, 12, 8, 8, 9, 29, 38, 8, 9, 2, 3, 7, 10, 12, 8, 34, 7]
 
