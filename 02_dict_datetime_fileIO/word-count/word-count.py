@@ -19,7 +19,6 @@ def word_stats(filename, n):
 			my_dict[val] = 1
 	#sort dict by descending value
 	sorted_dict = sorted(my_dict.items(), key= lambda x: x[1], reverse = True)
-	print(sorted_dict)
 	#return top n values
 	for i in range(0,n):
 		print("\""+sorted_dict[i][0]+"\""+", "+str(sorted_dict[i][1]))
