@@ -18,8 +18,14 @@
   * Palindrome_1 - completed
   * palindrome_2 - completed
   * title_case_1 - completed
-  * title_case_2
-  * title_case_3
-  * sum_of_divisors
+  * title_case_2 - in progress
+  * title_case_3 - completed
+  * sum_of_divisors - in progress
   * sum_of_totatives
+  * currency
+  
+  * word-count - completed
+  * matrix-sort - in progress
+  * birthday - in progress
+  * tower of hanoi
   * currency
