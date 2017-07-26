@@ -31,7 +31,7 @@
   * currency
   
   * Mcnuggets
-  * Credit_card - completed
+  * Credit_card - completed
   
   * cipher
-  * rpg
+  * rpg
