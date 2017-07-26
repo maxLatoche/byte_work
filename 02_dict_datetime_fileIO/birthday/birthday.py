@@ -1,24 +1,20 @@
 import datetime
+import calendar
 from datetime import timedelta
 
 def age_to_time(your_age):
-	'''
-	Answered the wrong question dummy
-	#get current date
-	tday = datetime.date.today()
-	#create timedelta w your_age
-	tdelta = timedelta(days=your_age*365)
-	#return current date - timedelta
-	bday = tday - tdelta 
-	print(bday.months)
-	'''
-	#establish bday, now - your_age
-	now = datetime.datetime.today()
+	#establish bday = now - your_age
+	now = datetime.datetime.now()
 	tdelta = timedelta(days=your_age*365)
 	byear = now - tdelta
-
+	#get the difference between those 2
+	diff = now - byear
+	#convert days to months
+	def delta_to_months(diff, )
+	#convert days to hours
+	#convert days to minutes
 	#age = now - byear
-	print(byear)	
+	print(diff)	
 
 
 def birthday_to_time():
