@@ -2,7 +2,7 @@
 
 # week1
 
-* Bash 
+* Bash
   *Star_Wars - in progress/have questions
 
 *Python
@@ -29,3 +29,9 @@
   * birthday - in progress
   * tower of hanoi
   * currency
+  
+  * Mcnuggets
+  * Credit_card - completed
+  
+  * cipher
+  * rpg
