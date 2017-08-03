@@ -1,4 +1,3 @@
-import pudb
 
 def currency_converter(amount):
     # create empty dict
@@ -43,8 +42,7 @@ def currency_converter(amount):
             i -= 5
         elif i - 1 >= 0:
             currency_dict["penny"] += 1
-            i -= 1
-    # pu.db   
+            i -= 1 
 
     # remove 0 value dict items
     for j,v in list(currency_dict.items()):
