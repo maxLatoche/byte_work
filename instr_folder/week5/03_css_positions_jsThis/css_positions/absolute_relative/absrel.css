@@ -1,0 +1,36 @@
+/*set all the squares to the same size */
+.square{
+  height: 100px;
+  width: 100px;
+}
+#container{
+  height: 1000px;
+  width: 1000px;
+  position: relative;
+  background-color: yellow;
+}
+.green{
+  background-color: green;
+  width: 500px;
+  height: 500px;
+  /*position: absolute;*/
+}
+.blue{
+  background-color: blue;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+.red{
+  background-color: red;
+  width: 500px;
+  height: 500px;
+  position: absolute; 
+}
+.pink{
+  background-color: pink;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+

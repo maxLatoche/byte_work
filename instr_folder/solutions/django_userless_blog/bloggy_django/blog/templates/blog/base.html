@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bloggy: A Blog about Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+    <script href="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+
+<div class="container large-8 large-centered columns">
+    <header class="header text-center">
+        <h1><a href="{% url 'blog:index' %}">Bloggy: A Blog about Blogs</a></h1>
+    </header>
+    <div class="row">
+        <div class="content large-12 large-centered columns">
+
+        {% block content %}
+
+        {% endblock content %}
+
+        <p></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="person-list">
+  {% for person in persons %}
+    <li>
+      <a href="/person/{{ person._id }}">{{ person.name }}</a>
+    </li>
+  {% endfor %}
+</div>
+
+<div id="add-person">
+  <form id="person-form" action="/add-person" method="POST">
+    <input name="person">
+    <input type="submit" value="add person">
+  </form>
+</div>
+
+<div id="add-thinkpad">
+</div>
+
+{% endblock %}

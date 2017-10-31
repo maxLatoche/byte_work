@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+    <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'todos/todos.css' %}">
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="heading">Client List</h1>
+            <a class="create_link" href="{% url 'todos:create' %}">Create New</a>
+        </div>
+
+        <form action="{% url 'todos:create' %}" method="POST">
+            {% csrf_token %}
+            <input name="task" type="text">
+            <button type="submit">Add Todo</button>
+        </form>
+
+        {% for todo in todos %}
+            <a href="{% url 'todos:read' todo_id=todo.id %}"><p>{{ todo.task }}</p></a>
+        {% endfor %}
+
+    </body>
+</html>

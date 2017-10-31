@@ -1,0 +1,26 @@
+
+.pink{
+  background-color: pink;
+  width: 500px;
+  height: 500px;
+  clear: left;
+  float: right;
+}
+
+.red{
+  background-color: red;
+  width: 500px;
+  height: 500px;
+  float: left;
+}
+
+img{
+  float:right;
+}
+
+
+#container{
+  height: 1000px;
+  width: 1000px;
+  background-color: orange;
+}

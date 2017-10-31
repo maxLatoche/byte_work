@@ -1,0 +1,45 @@
+/*Squares Sized*/
+.square{
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+}
+/*Container Sized*/
+#container{
+  border: 1px solid black;
+  height: 1000px;
+  width: 1000px;
+  position: relative;
+  background-color: green;
+  margin: 100px;
+}
+/*Square with FIXED position*/
+.orange{
+  background-color: orange;
+  position: fixed;
+}
+/*Absolute Square by itself*/
+.abso{
+  background-color: gray;
+  position: absolute;
+  bottom:100px;
+}
+/*Squares with Absolute Positioning that are nested*/
+.red{
+  background-color: red;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+.purple{
+  background-color: purple;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+.pink{
+  background-color: pink;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}

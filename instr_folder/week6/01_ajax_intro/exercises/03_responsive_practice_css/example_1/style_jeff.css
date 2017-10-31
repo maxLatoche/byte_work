@@ -1,0 +1,128 @@
+/*default color of body text*/
+body {
+    color: #710891;
+    font-size: 1.2em;
+}
+
+/*style the header and center it*/
+h1 {
+    height: 25px;
+    margin-top: 10px;
+    text-align: center;
+    color: #ff594e;
+}
+
+/*set default link color and size*/
+a {
+    color: #e93fff;
+    font-size: 1.5em;
+}
+
+/*color when link clicked*/
+a:active {
+    color: #1fc51a;
+}
+
+/*color when link hovered*/
+/*a:hover {
+    color: #f08312;
+}*/
+
+li:first-child{
+    font-size: 2em;
+    color: #0a15f0;
+}
+
+/*default button color*/
+button {
+    height: 200px;
+    width: 300px;
+    font-size: 1.5em;
+    border: solid purple 5px;
+    border-radius: 30px;
+}
+
+/*what does the button look like when mouse-hovered?*/
+button:hover {
+    border: solid red 5px;
+    background-color: orange;
+    color: green;
+}
+
+span {
+    color: #d66100;
+}
+
+#flash-div, #superman-div, #casper-div, #sonicbox{
+    width: 250px;
+    margin-left: 200px;
+}
+
+#flash-div {
+    transition: all .5s linear .05s;
+}
+
+#flash-div:hover {
+    transform: scale(2);
+}
+
+#superman-div {
+    transition: all 5s ease .05s;
+}
+
+#superman-div:hover {
+    margin-left: 1500px;
+}
+
+#casper {
+    height: 350px;
+}
+
+#casper-div {
+    transition: opacity 1s ease .05s;
+}
+
+#casper-div:hover {
+    opacity: 1;
+}
+
+#flash-img, #superman-img, #casper-img, #sonicimage{
+    width: 100%;
+}
+
+#casper-div {
+    opacity: .1;
+}
+
+p {
+    width: 10%;
+    transform: rotate(180deg);
+}
+
+p#slow {
+    transition: all 2s linear .05s;
+}
+
+p:hover {
+    transform: rotate(30deg);
+}
+
+p#slow:hover {
+    color: green;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    margin-left: 1000px;
+  }
+}
+
+#sonicbox:hover {
+    animation: rotate 2s;
+}

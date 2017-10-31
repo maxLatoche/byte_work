@@ -1,0 +1,25 @@
+.red{background-color: red;}
+.green{background-color: green;}
+.blue{background-color: blue;}
+.purple{background-color: purple;}
+.pink{background-color: pink;}
+.grey{background-color: grey;}
+.black{background-color: black;}
+
+.boxItem{
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	flex-grow: 1;	
+}
+
+.container{
+	display:flex;
+	align-items: baseline;
+}
+
+.red{font-size: 10px;}
+.black{font-size: 150px;}
+.green{font-size: 75px;}
+.grey{font-size: 25px;}
+.blue{font-size: 35px;}

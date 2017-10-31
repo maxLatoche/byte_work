@@ -1,0 +1,40 @@
+/*Makes all the squares the same size*/
+.square{
+  height: 200px;
+  width: 200px;
+}
+
+
+.blue{
+  background-color: blue;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.green{
+  background-color: green;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.pink{
+  background-color: pink;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+} 
+
+
+.red{ 
+  background-color: red;
+}
+
+/*Gives a container with a border for visualization*/
+#container{
+  border: 5px solid black;
+  height: 1000px;
+  width: 1000px;
+  position: relative;
+}

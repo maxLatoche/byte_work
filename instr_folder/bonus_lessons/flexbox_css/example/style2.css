@@ -1,0 +1,23 @@
+.red{background-color: red;}
+.green{background-color: green;}
+.blue{background-color: blue;}
+.purple{background-color: purple;}
+.pink{background-color: pink;}
+.grey{background-color: grey;}
+.black{background-color: black;}
+
+.boxItem{
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	height: 400px;
+}
+
+.container{
+	display:flex;
+	height: 100vh;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}

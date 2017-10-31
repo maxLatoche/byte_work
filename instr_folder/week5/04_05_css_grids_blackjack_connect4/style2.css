@@ -1,0 +1,24 @@
+@media only screen and (max-width: 667px){
+	.tablet{
+		display:none;
+	}
+	.computer{
+		display:none;
+	}	
+}
+
+@media only screen and (min-width: 667px) and (max-width: 1024px){
+
+	.mobile{
+		display:none;
+	}
+	.computer{
+		display:none
+	}
+}
+
+@media only screen and (min-width:1024px){
+	.mobile, .tablet{
+		display:none;
+	}
+}

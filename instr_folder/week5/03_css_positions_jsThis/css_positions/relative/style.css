@@ -1,0 +1,32 @@
+/*Size all squares*/
+.square{
+  border: 1px dashed black;
+  height: 200px;
+  width: 200px;
+}
+/*Container size*/
+#container{
+  border: 10px double black;
+  height: 1000px;
+  width: 1000px;
+  /*position: relative;*/
+}
+/*Two squares no position*/
+.yellow{
+  background-color: yellow;
+}
+.red{
+  background-color: red;
+}
+/*Two squares with relative position*/
+.green{
+  background-color: green;
+  position: relative;
+  left: 200px;
+}
+.pink{
+  background-color: pink;
+  position: relative;
+  left: 200px;
+}
+

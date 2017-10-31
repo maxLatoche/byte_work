@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang=en>
+        <head>
+                <title>Checkpoint</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href="{{ url_for("static", filename="style.css") }}" rel="stylesheet">
+        </head>
+        <body>
+                <div id="content">
+                        <form action="/cabinet_noir" method="post">
+                                <input id="username" type="text" placeholder="Username" name="username" value="{{ request.form.username }}"><br>
+                                <input id="password" type="text" placeholder="Password" name="password" value="{{ request.form.password }}"><br>
+                                <input id="factor" type="text" placeholder="Factor" name="factor" value="{{ request.form.factor }}"><br>
+                        </form><br>
+                        {% if error_message %}
+                        <invalid>{{ error_message }}</invalid>
+                        {% endif %}
+                </div>
+        </body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background-color: #E0D2D2;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container{
+    background-color: white;
+    padding: 0;
+}
+
+.errorlist > input, .errorlist > textarea{
+   border: 3px solid red; 
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Read</title>
+</head>
+<body>
+    <h1>TOdo</h1>
+    <p>{{ todo.task }}</p>
+
+    <form action="{% url 'todos:update' todo_id=todo.id %}" method="POST">
+        {% csrf_token %}
+        <input name="task" type="text" value="{{todo.task}}">
+        <button type="submit">Update Todo</button>
+    </form>
+
+    <a href="{% url 'todos:delete' todo_id=todo.id %}">Delete this todo</a>
+
+    <a href="{% url 'todos:index' %}">Back</a>
+</body>
+</html>

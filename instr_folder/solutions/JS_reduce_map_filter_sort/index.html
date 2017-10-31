@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		const heroes = [
+			"wolverine","spiderman","captain America","iron man","hulk","thor","quicksilver","scarlet witch","black widow","storm","emma frost","beast","black panther","deadpool","daredevil"
+		];
+
+		const identities = [
+			{ first: "James", last: "Howlett", year: 1850, team: "X-men"},
+			{ first: "Peter", last: "Parker", year: 1995, team: "Avengers"},
+			{ first: "Steve", last: "Rogers", year: 1920, team: "Avengers"},
+			{ first: "Tony", last: "Stark", year: 1980, team: "Avengers"},
+			{ first: "Bruce", last: "Banner", year: 1977, team: "Avengers"},
+			{ first: "pietro", last: "Maximoff", year: 1964, team: "X-men"},
+			{ first: "Wanda", last: "Maximoff", year: 1964, team: "X-men"},
+			{ first: "Natasha", last: "Romanova", year: 1985, team: "Avengers"},
+			{ first: "Ororo", last: "Munroe", year: 1975, team: "X-men"},
+			{ first: "Emma", last: "Frost", year: 1965, team: "X-men"},
+			{ first: "Hank", last: "Mccoy", year: 1970, team: "X-men"},
+			{ first: "T'", last: "Challa", year: 1971, team: "Avengers"},
+			{ first: "Wade", last: "Wilson", year: 1925, team: "X-men"},
+			{ first: "Matt", last: "Murdock", year: 1981, team: "Avengers"},
+		];
+
+		// Find people from identities who were born in the 1970's
+		const newerIdentities = identities.filter((identity) => {
+			return identity.year >= 1970 && identity.year < 1980
+		})
+		console.table(newerIdentities);
+
+		// Sort the list of heroes alphabetically
+		const heroesSorted = heroes.sort()
+		console.log(heroesSorted);
+
+		// Capitalize the first letter of each of the heroes. (each word if their name has more than one)
+		const properCase = function(str){
+			let strArr = str.split(" ");
+			let temp = strArr.map((word)=> {
+				let first = word[0].toUpperCase();
+				let rest = word.substr(1).toLowerCase();
+				return `${first}${rest}`;
+			})
+			return temp.join(" ")
+		}
+		
+		const titleHeroes = heroes.map((hero)=>{
+			return properCase(hero);
+		})
+		console.log(titleHeroes)
+
+		// Return an array of heroes that have only one word in their name
+		const singleNameHeroes = heroes.filter((hero)=>{
+			return hero.indexOf(" ") === -1
+		})
+		console.log(singleNameHeroes)
+
+		// Return an array of heroes that have two words in their name
+		const multiNameHeroes = heroes.filter((hero)=>{
+			return hero.indexOf(" ") >= 0
+		})
+		console.log(multiNameHeroes);
+
+		// Sort identities by first name
+		const firstNameSort = identities.sort((first, second)=>{
+			return first.first > second.first ? 1 : -1
+		})
+		console.table(firstNameSort)
+
+		// Sort identities by last name
+		const lastNameSort = identities.sort((first, second)=>{
+			return first.last > second.last ? 1 : -1
+		})
+		console.table(firstNameSort);
+
+		// Sort identities by year (ascending order)
+		const bornAscending = identities.sort((first,second)=>{
+			return first.year > second.year ? 1 : -1
+		})
+		console.table(bornAscending)
+
+		// Sort identities by year (descending order)
+		const bornDescending = identities.sort((first, second)=>{
+			return first.year > second.year? -1 : 1 
+		})
+		console.table(bornDescending);
+
+		// Sum the years of all the values in identities
+		const sumYears = identities.reduce((init, identity)=>{
+			return init + identity.year
+		},0)
+		console.log(sumYears);
+
+		// Return how many Avengers and how many X-men there are
+		const heroTeams = identities.reduce((first, second) =>{
+			let temp = second.team === "X-men" ? first["X-men"]++ : first["Avengers"]++;
+
+			return first
+		}, {"Avengers": 0, "X-men": 0})
+		console.table(heroTeams);
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+
